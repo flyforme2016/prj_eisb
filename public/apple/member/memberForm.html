@@ -7,7 +7,45 @@
 	<title>GIJEONG</title>	
 </head>
 <body>
-	memberForm.html
+	<h3>memberForm.html(회원가입)</h3>
+	<form action="" method="post" id="form" name="form" enctype="multipart/form-data">
+		이름 <input type="text" id="name" name="name">
+		<br>아이디 <input type="text" id="nickname" name="nickname">
+		<br>비밀번호 <input type="password" id="password" name="password">
+		<br>성별 <input type="radio" id="gender" name="gender">남자
+		<input type="radio" id="gender" name="gender">여자
+		<br>생년월일 <input type="date" id="birthday" name="birthday">
+		<br>국적
+		<select id="nation" name="nation">
+			<option value="KOREA">대한민국
+			<option value="USA">미국
+			<option value="JAPAN">일본
+		</select>
+		<br>주소 <input type="text" id="address" name="address" size="50"> 
+		<br>휴대전화번호 <input type="number" id="phone" name="phone">
+		<br>모바일 마케팅 수신 동의 <input type="checkbox" id="acceptemail" name="acceptemail">
+		<br>집전화번호 <input type="number" id="homecall" name="homecall">
+		<br>팩스번호 <input type="number" id="fax" name="fax">
+		<br>이메일 <input type="text" id="email" name="email" size="50"> 
+		<br>이메일 마케팅 수신 동의 <input type="checkbox" id="acceptemail" name="acceptemail">
+		<br>추천인 <input type="text" id="recommend" name="recommend">
+		<br>비밀번호문제 
+		<select id="passquestion" name="passquestion">
+			<option value="KOREA">내 보물 1호는?
+			<option value="USA">출신 초등학교는?
+			<option value="JAPAN">가장 좋아하는 음식은?
+		</select>
+		<br>비밀번호답 <input type="text" id="passanswer" name="passanswer">
+		<br>인스타그램 <input type="text" id="instagram" name="instagram">
+		<br>사진 <input type="file" id="photo" name="photo" accept=".png,.jpg">
+		<br>홈페이지 <input type="text" id="homepage" name="homepage">
+		<br>직업 <input type="text" id="job" name="job">
+		<br>취미 <input type="text" id="hobby" name="hobby">
+		<br>결혼여부 <input type="radio" id="marry" name="marry">미혼
+		<input type="radio" id="marry" name="marry">기혼
+		<br>결혼 기념일 <input type="date" id="marrydate" name="marrydate">
+ 		
+	</form>
 
 </body>
 </html>
