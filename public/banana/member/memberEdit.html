@@ -17,33 +17,45 @@
 		th, td{
 		padding: 10px;
 		}
+		input[type=date]{
+			width: 98%
+		}
+		select{
+			width: 99%;
+		}
 		.atag{
 		text-align: center;
+		}
+		.item{
+			background-color: #d3d3d3;
+		}
+		.topTitle{
+			margin-top: 1px; 
 		}
 		
 	</style>
 	
 </head>
-<body>
-	<h1 align="center">회원가입</h1>
+<body >
 	<form action="" method="post" id="form" name="form" enctype="multipart/form-data">
-		<h3 align="center">[개인정보]</h3>
+		<h1 class="topTitle"align="center" style="color:blue; margin-bottom: 1px">EZENIT</h1>
+	<h3 class="topTitle" align="center" style="color:blue;">ACADEMY</h3>
 		<table>
 			<tr>
 				<td class="item">이름</td>
-				<td><input type="text" id="name" name="name"></td>
+				<td><input type="text" id="name" name="name" size="40" value="김기정"></td>
 				<td class="item">아이디</td>
-				<td><input type="text" id="nickname" name="nickname"></td>
+				<td><input type="text" id="nickname" name="nickname" size="40" value="flyforme2016"></td>
 			</tr>
 			<tr>
 				<td class="item">비밀번호</td>
-				<td><input type="password" id="password" name="password"></td>
+				<td><input type="password" id="password" name="password" size="40" value="dlsgkflex19!"></td>
 				<td class="item">성별</td>
-				<td><input type="radio" id="gender" name="gender">남자<input type="radio" id="gender" name="gender">여자</td>
+				<td><input type="radio" id="gender" name="gender" checked>남자<input type="radio" id="gender" name="gender">여자</td>
 			</tr>
 			<tr>
 				<td class="item">생년원일</td>
-				<td><input type="date" id="birthday" name="birthday"></td>
+				<td><input type="date" id="birthday" name="birthday" value="1997-04-22"></td>
 				<td class="item">국적</td>
 				<td><select id="nation" name="nation">
 						<option value="KOREA">대한민국
@@ -54,27 +66,38 @@
 			</tr>
 			<tr>
 				<td class="item">주소</td>
-				<td><input type="text" id="address" name="address" size="30"></td>
+				<td><input type="text" id="address" name="address" size="40" value="인천 연수구"></td>
 				<td class="item">휴대전화번호</td>
-				<td><input type="number" id="phone" name="phone"></td>
+				<td align="center">
+					<input type="text" id="phoneF" name="phoneF" size="3" value="010"> -
+					<input type="text" id="phoneM" name="phoneM" size="4" value="1111"> -
+					<input type="text" id="phoneL" name="phoneL" size="4" value="2222">
+				</td>
 			</tr>
 			<tr>
 				<td class="item">모바일 마케팅 수신 동의</td>
-				<td><input type="checkbox" id="acceptemail" name="acceptemail"></td>
+				<td><input type="checkbox" id="acceptemail" name="acceptemail" checked></td>
 				<td class="item">집전화번호</td>
-				<td><input type="number" id="homecall" name="homecall"></td>
+				<td align="center">
+					<input type="text" id="homecallF" name="homecallF" size="3" value="032"> -
+					<input type="text" id="homecallM" name="homecallM" size="4" value="819"> -
+					<input type="text" id="homecallL" name="homecallL" size="4" value="3618">
+				</td>
 			</tr>
 			<tr>
 				<td class="item">팩스번호</td>
-				<td><input type="number" id="fax" name="fax"></td>
+				<td><input type="text" id="fax" name="fax" size="40" value="541)189-598"></td>
 				<td class="item">이메일</td>
-				<td><input type="text" id="email" name="email" size="30"></td>
+				<td>
+					<input type="text" id="emailF" name="emailF" size="15" value="cjdfidrlwjd"> @ 
+					<input type="text" id="emailB" name="emailB" size="15" value="naver.com">
+				</td>
 			</tr>
 			<tr>
 				<td class="item">이메일 마케팅 수신 동의</td>
-				<td><input type="checkbox" id="acceptemail" name="acceptemail"></td>
+				<td><input type="checkbox" id="acceptemail" name="acceptemail" checked></td>
 				<td class="item">추천인</td>
-				<td><input type="text" id="recommend" name="recommend"></td>
+				<td><input type="text" id="recommend" name="recommend" size="40" value="없음"></td>
 			</tr>
 			<tr>
 				<td class="item">비밀번호 문제</td>
@@ -85,25 +108,25 @@
 					</select>
 				</td>
 				<td class="item">비밀번호답</td>
-				<td><input type="text" id="passanswer" name="passanswer"></td>
+				<td><input type="text" id="passanswer" name="passanswer" size="40" value="배개"></td>
 			</tr>
 			<tr>
 				<td class="item">인스타그램</td>
-				<td><input type="text" id="instagram" name="instagram"></td>
+				<td><input type="text" id="instagram" name="instagram" size="40" value="@kimgijeong_eisb"></td>
 				<td class="item">사진</td>
 				<td><input type="file" id="photo" name="photo" accept=".png,.jpg"></td>
 			</tr>
 			<tr>
 				<td class="item">홈페이지</td>
-				<td><input type="text" id="homepage" name="homepage"></td>
+				<td><input type="text" id="homepage" name="homepage" size="40" value="없음"></td>
 				<td class="item">직업</td>
-				<td><input type="text" id="job" name="job"></td>
+				<td><input type="text" id="job" name="job" size="40" value="개발자"></td>
 			</tr>
 			<tr>
 				<td class="item">취미</td>
-				<td><input type="text" id="hobby" name="hobby"></td>
+				<td><input type="text" id="hobby" name="hobby" size="40" value="영화보기/맛집탐방/클라이밍"></td>
 				<td class="item">결혼여부</td>
-				<td><input type="radio" id="marry" name="marry">미혼
+				<td><input type="radio" id="marry" name="marry" checked>미혼
 					<input type="radio" id="marry" name="marry">기혼
 				</td>
 			</tr>
@@ -112,12 +135,12 @@
 				<td><input type="date" id="marrydate" name="marrydate"></td>
 				<td class="item">자녀 유무</td>
 				<td><input type="radio" id="child" name="child">유 
-					<input type="radio" id="child" name="child">무
+					<input type="radio" id="child" name="child" chekced>무
 				</td>
 			</tr>
 			<tr>
 				<td class="item">좋아하는 색깔</td>
-				<td><input type="text" id="color" name="color"></td>
+				<td><input type="text" id="color" name="color" size="40" value="검은색"></td>
 				<td class="item">개인정보 유효기간</td>
 				<td><select id="private" name="private">
 						<option value="3years">3년
@@ -128,7 +151,7 @@
 			</tr>
 			<tr>
 				<td class="item">본인 소개</td>
-				<td align="center" colspan="3"><textarea rows="5" cols="80"></textarea></td>
+				<td align="center" colspan="3"><textarea rows="5" cols="80">없음</textarea></td>
 			</tr>
 		</table>
 		<h3 align="center">[프로젝트]</h3>
