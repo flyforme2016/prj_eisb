@@ -63,10 +63,21 @@
 						           <select class="form-select bg-light border-light rounded-pill" aria-label="검색구분">
 									  <option selected>회원등급</option>
 									  <option value="1">전체</option>
-									  <option value="2">Bronze</option>
-									  <option value="3">Silver</option>
-									  <option value="3">Gold</option>
+									  <option value="2">BRONZE</option>
+									  <option value="3">SILVER</option>
+									  <option value="3">GOLD</option>
 									  <option value="3">VIP</option>
+									</select>
+							    </div>
+							</div>
+							<div class="col-2">
+								<div class="p-1 bg-light rounded rounded-pill">
+						           <select class="form-select bg-light border-light rounded-pill" aria-label="검색구분">
+									  <option selected>회원상태</option>
+									  <option value="1">전체</option>
+									  <option value="2">정상</option>
+									  <option value="3">휴먼</option>
+									  <option value="3">삭제</option>
 									</select>
 							    </div>
 							</div>
@@ -100,59 +111,77 @@
 					<thead class="table-secondary">
 						<tr>
 							<th><input type="checkbox"></th>
-							<th>번호</th>
+							<th>No.</th>
+							<th>회원등급</th>
 							<th>이름</th>
 							<th>아이디</th>
-							<th>휴대폰번호</th>
-							<th>주소</th>
 							<th>이메일</th>
+							<th>휴대폰번호</th>
+							<th>등록일</th>
+							<th>회원구분</th>
+							<th>가입상태</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td>
 							<td>1</td>
+							<td>GOLD</td>
 							<td><a href="memberView.html">한놈</a></td>
 							<td>one</td>
-							<td>010-1111-1111</td>
-							<td>인천</td>
 							<td>cjdfidrlwjd@naver.com</td>
+							<td>010-1111-1111</td>
+							<td>2016-02-30</td>
+							<td>일반</td>
+							<td>정상</td>
 						</tr>
 						<tr>
 							<td class="bs-checkbox "><input data-index="1" name="btSelectItem" type="checkbox"></td>
 							<td>2</td>
+							<td>BRONZE</td>
 							<td>두식이</td>
 							<td>two</td>
-							<td>010-2222-2222</td>
-							<td>서울</td>
 							<td>ehdcnsrlwjd@naver.com</td>
+							<td>010-2222-2222</td>
+							<td>2022-02-08</td>
+							<td>소매</td>
+							<td>정상</td>
 						</tr>
 						<tr>
 							<td class="bs-checkbox "><input data-index="2" name="btSelectItem" type="checkbox"></td>
 							<td>3</td>
+							<td>SILVER</td>
 							<td>석삼</td>
 							<td>three</td>
-							<td>010-3333-3333</td>
-							<td>경기</td>
 							<td>dlsgkrlwjd@gmail.com</td>
+							<td>010-3333-3333</td>
+							<td>1997-04-22</td>
+							<td>일반</td>
+							<td>휴먼</td>
 						</tr>
 						<tr>
 							<td class="bs-checkbox "><input data-index="3" name="btSelectItem" type="checkbox"></td>
 							<td>4</td>
+							<td>SILVER</td>
 							<td>너구리</td>
 							<td>four</td>
-							<td>010-4444-4444</td>
-							<td>부산</td>
 							<td>ehdcnsrlwjd@gmail.com</td>
+							<td>010-4444-4444</td>
+							<td>2021-11-19</td>
+							<td>일반</td>
+							<td>탈퇴</td>
 						</tr>
 						<tr>
 							<td class="bs-checkbox "><input data-index="4" name="btSelectItem" type="checkbox"></td>
 							<td>5</td>
+							<td>VIP</td>
 							<td>오징어</td>
 							<td>five</td>
-							<td>010-5555-5555</td>
-							<td>대구</td>
 							<td>12161531@inha.ac.kr</td>
+							<td>010-5555-5555</td>
+							<td>2012-07-21</td>
+							<td>도매</td>
+							<td>정상</td>
 						</tr>
 					</tbody>
 				</table>
